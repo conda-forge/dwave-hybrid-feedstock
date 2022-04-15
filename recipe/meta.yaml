@@ -1,5 +1,5 @@
 {% set name = "dwave-hybrid" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-hybrid-{{ version }}.tar.gz
-  sha256: f8c46a77e95f66f277b6164c53d8a73a49bad9048c099877a9c69db8ec174619
+  sha256: 05e46cf9ade8c77341cdb4ef1840410619bc4f06808c6f2997018d628bf0f8da
 
 build:
   noarch: python
