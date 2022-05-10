@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - click >5
-    - dimod >=0.10.5,<0.13,!=0.10.0,!=0.10.1,!=0.10.2,!=0.10.3,!=0.10.4,!=0.10.9
+    - dimod >=0.10.13,<0.13
     - dwave-greedy >=0.1.0
     - dwave-neal >=0.5.4
     - dwave-networkx >=0.8.8
@@ -29,9 +29,9 @@ requirements:
     - dwave-tabu >=0.2.0
     - minorminer >=0.1.7
     - networkx
-    - numpy >=1.17.3
+    - numpy >=1.19.1
     - plucky >=0.4.3
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
