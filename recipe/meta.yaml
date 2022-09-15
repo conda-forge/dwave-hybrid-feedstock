@@ -1,5 +1,5 @@
 {% set name = "dwave-hybrid" %}
-{% set version = "0.6.8" %}
+{% set version = "0.6.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-hybrid-{{ version }}.tar.gz
-  sha256: 486ea3e87e16ad5da986e83b594908692f38d7826e64e00ff51e86ca2747e9c0
+  sha256: 1d656d4e6facd9b993c19d8d634f28d163ece9618ec456776521cab97b86804b
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - dwave-neal >=0.5.4
     - dwave-networkx >=0.8.8
     - dwave-preprocessing
-    - dwave-system >=0.7.6
+    - dwave-system >=1.13.0
     - dwave-tabu >=0.2.0
     - minorminer >=0.1.7
     - networkx
