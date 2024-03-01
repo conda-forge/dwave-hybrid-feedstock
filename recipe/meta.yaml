@@ -1,5 +1,5 @@
 {% set name = "dwave-hybrid" %}
-{% set version = "0.6.10" %}
+{% set version = "0.6.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-hybrid-{{ version }}.tar.gz
-  sha256: 35ab1a892444754fd61c8ef7ebb965fda30cc5f04b8f415ff5e07581bb155afc
+  sha256: 201230a937f92bd820311bdd6dd6ce8b68ff4e35392fe88e31aa8e41849c4eb9
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - dwave-cloud-client >=0.10.6
     - click >5
     - dimod >=0.10.13,<0.13
     - dwave-greedy >=0.1.0
