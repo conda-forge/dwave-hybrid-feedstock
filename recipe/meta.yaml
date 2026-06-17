@@ -1,5 +1,5 @@
 {% set name = "dwave-hybrid" %}
-{% set version = "0.6.15" %}
+{% set version = "0.6.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c834d4440fc5444a57bad55cef102a0a90892aca2b76dacd5c9152f387d81f74
+  sha256: 5e41f637920905128b0fe4b7b2f0de6d12f921933cd31b9ae611289352d6b9f0
 
 build:
   noarch: python
@@ -21,20 +21,21 @@ requirements:
     - setuptools >=46.4.0
     - wheel
   run:
-    - dwave-samplers >=1.0.0
-    - dwave-cloud-client >=0.10.6
-    - click >5
-    - dimod >=0.12.2,<0.13
+    - dwave-graphs >=1,<2
+    - dwave-samplers >=1.3,<2
+    - dwave-cloud-client >=0.10.6,<0.15
+    - click >5,<9
+    - dimod >=0.12.22,<0.13
     - dwave-greedy >=0.1.0
     - dwave-neal >=0.5.4
     - dwave-networkx >=0.8.8
-    - dwave-preprocessing >=0.5.4
-    - dwave-system >=1.16.0
+    - dwave-preprocessing >=0.6.6,<0.7
+    - dwave-system >=1.23.0,<2
     - dwave-tabu >=0.2.0
-    - minorminer >=0.1.7
-    - networkx
-    - numpy >=1.19.1
-    - plucky >=0.4.3
+    - minorminer >=0.1.7,<0.3
+    - networkx >=3.2,<4
+    - numpy >=2,<3
+    - plucky >=0.4.3,<0.5
     - python >={{ python_min }}
 
 test:
